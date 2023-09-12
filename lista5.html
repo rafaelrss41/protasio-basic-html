@@ -4,26 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercico5</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #container{
+            width: 100vw;
+            height: 100vh;
+            text-align: justify;
+        }
+        .header h1{
+            text-align: center;
+            padding: 12px;
+            font-size: 36px;
+            color: blueviolet;
+        }
+
+        .header p{
+            margin: 1px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: self-start;
+            font-size: 18px;
+            padding: 18px;
+        }
+        .header hr{
+            margin-bottom: 15px;
+        }
+
+        .main{
+            margin: 25px;
+        }
+        .main hr{
+            margin-top:12px;
+            margin-bottom: 28px;
+        }
+        .main h1{
+            text-align: center;
+            font-size: 36px;
+            color: blueviolet;
+            margin-bottom: 28px;
+        }
+        ol{
+            text-transform: uppercase;
+        }
+        ol li{
+            padding: 12px;
+            text-align: left;
+        }
+
+        .main1{
+            margin: 25px;
+        }
+        .main1 hr{
+            margin-top:12px;
+            margin-bottom: 28px;
+        }
+        .main1 h1{
+            text-align: center;
+            font-size: 36px;
+            color: blueviolet;
+            margin-bottom: 28px;
+        }
+        .main1 h2{
+            text-align: center;
+            font-size: 36px;
+            color: blueviolet;
+            margin-bottom: 28px;
+        }
+        .main1 p{
+            text-transform: uppercase;
+            text-align: initial;
+        }
+        .code {
+            color: red;
+            margin: 15px;
+        }
+        .finalP{
+            text-align: center;
+            margin: 28px;
+            color: #000;
+            font-size: 18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 38px;
+            border: 0.25rem black solid;
+            background-color: purple;
+            color: #ffffff;
+            font-size: 18px;    
+        }
+        address{
+            font-weight: 900;
+        }
+    </style>
 </head>
+
     <body>
-        <div class="container">
-            <h1>Programação em shell script</h1>
-                <hr size="10px" width="100%" align="center" noshade>
-                    <p>
+        <div id="container">
+            <div class="header">
+                <h1>Programação em shell script</h1>
+                    <hr  size="10px" width="100%" align="center" noshade>
+                        <p>
+                                A linguagem de script shell, frequentemente referida como "shell script" ou simplesmente "bash script",<br> 
+                                não foi criada por uma única pessoa. Ela evoluiu ao longo do tempo como parte dos sistemas Unix e Unix-like.<br> 
+                                A linguagem de script shell é usada para automação de tarefas e interação com o sistema operacional por meio de comandos e scripts.<br>
+                                O Bash (Bourne Again Shell) é uma das implementações mais populares e amplamente usadas da linguagem shell. <br>
+                                O Bash foi criado por Brian Fox em 1989, como um substituto do shell Bourne original (sh) criado por Stephen Bourne.<br> 
+                                O Bash estende e aprimora as funcionalidades do shell Bourne original e adiciona recursos poderosos de programação de script.<br>
+                                Portanto, embora Brian Fox tenha criado o Bash, a linguagem de script shell em si é uma evolução natural das linguagens 
+                                de comando e script que existiam nos sistemas Unix desde o seu início. Ela foi aprimorada e estendida por várias pessoas ao longo dos anos para se tornar
+                                a linguagem de script shell que conhecemos hoje.
+                                A programação em shell script é uma forma de automatizar tarefas em sistemas Unix-like (Linux, macOS, etc.) usando comandos de shell e scripts. <br>
+                                Abaixo, vou fornecer uma visão geral de conceitos importantes e exemplos de códigos simples para ilustrar esses conceitos.
+                        </p>
+            </div>
 
-                            A linguagem de script shell, frequentemente referida como "shell script" ou simplesmente "bash script",<br> 
-                            não foi criada por uma única pessoa. Ela evoluiu ao longo do tempo como parte dos sistemas Unix e Unix-like.<br> 
-                            A linguagem de script shell é usada para automação de tarefas e interação com o sistema operacional por meio de comandos e scripts.<br>
-                            O Bash (Bourne Again Shell) é uma das implementações mais populares e amplamente usadas da linguagem shell. <br>
-                            O Bash foi criado por Brian Fox em 1989, como um substituto do shell Bourne original (sh) criado por Stephen Bourne.<br> 
-                            O Bash estende e aprimora as funcionalidades do shell Bourne original e adiciona recursos poderosos de programação de script.<br>
-                            Portanto, embora Brian Fox tenha criado o Bash, a linguagem de script shell em si é uma evolução natural das linguagens <br>
-                            de comando e script que existiam nos sistemas Unix desde o seu início. Ela foi aprimorada e estendida por várias pessoas ao longo dos anos para se tornar <br>
-                            a linguagem de script shell que conhecemos hoje.
-                            A programação em shell script é uma forma de automatizar tarefas em sistemas Unix-like (Linux, macOS, etc.) usando comandos de shell e scripts. <br>
-                            Abaixo, vou fornecer uma visão geral de conceitos importantes e exemplos de códigos simples para ilustrar esses conceitos.
-                    </p>
-
+            <div class="main">
                 <hr size="5px" width="100%" align="center" noshade color="red">
                     <h1>Conceitos básicos</h1>
                         <hr size="10px" width="100%" align="center" noshade>
@@ -65,75 +171,83 @@
                                     </li>
                                     <img src="images/image-shell-7.png" alt="Functions">
                                 </ol>
+            </div>
 
+            <div class="main1">
                     <hr size="5px" width="100%" align="center" noshade color="red">
                         <h1>Exemplos de código</h1>
                             <hr size="10px" width="100%" align="center" noshade>
                             
                         <h2>Exemplo1: Calculadora Simples</h2>
                                 <p>
-                                    Este é um script que pede ao usuário<br>
-                                    para inserir dois números e realiza operações matemáticas simples.
+                                    Este é um script que pede ao usuário para inserir dois números e realiza operações matemáticas simples.<br>
                                 </p>
-            <div>
-                #!/bin/bash<br>
-                <br>
-                echo "Calculadora Simples"<br>
-                echo "Digite o primeiro número:"<br>
-                read num1<br>
-                echo "Digite o segundo número:"<br>
-                read num2<br>
+                                <br>
+                    <div class="code">
+                        #!/bin/bash<br>
+                        <br>
+                        echo "Calculadora Simples"<br>
+                        echo "Digite o primeiro número:"<br>
+                        read num1<br>
+                        echo "Digite o segundo número:"<br>
+                        read num2<br>
 
-                echo "Escolha a operação:"<br>
-                echo "1. Adição"<br>
-                echo "2. Subtração"<br>
-                echo "3. Multiplicação"<br>
-                echo "4. Divisão"<br>
+                        echo "Escolha a operação:"<br>
+                        echo "1. Adição"<br>
+                        echo "2. Subtração"<br>
+                        echo "3. Multiplicação"<br>
+                        echo "4. Divisão"<br>
 
-                read operacao<br>
+                        read operacao<br>
 
-                case $operacao in<br>
-                1)<br>
-                    resultado=$((num1 + num2))<br>
-                    ;;<br>
-                2)<br>
-                    resultado=$((num1 - num2))<br>
-                    ;;<br>
-                3)<br>
-                    resultado=$((num1 * num2))<br>
-                    ;;<br>
-                4)<br>
-                    resultado=$(echo "scale=2; $num1 / $num2" | bc)
-                    ;;<br>
-                *)<br>
-                    echo "Opção inválida"<br>
-                    exit 1<br>
-                    ;;<br>
-                esac<br>
-
-                echo "Resultado: $resultado"
-            </div>
+                        case $operacao in<br>
+                        1)<br>
+                            resultado=$((num1 + num2))<br>
+                            ;;<br>
+                        2)<br>
+                            resultado=$((num1 - num2))<br>
+                            ;;<br>
+                        3)<br>
+                            resultado=$((num1 * num2))<br>
+                            ;;<br>
+                        4)<br>
+                            resultado=$(echo "scale=2; $num1 / $num2" | bc)
+                            ;;<br>
+                        *)<br>
+                            echo "Opção inválida"<br>
+                            exit 1<br>
+                            ;;<br>
+                        esac<br>
+                        echo "Resultado: $resultado"
+                    </div>
 
                 <hr size="5px" width="100%" align="center" noshade color="red">
                     <h1>Exemplos de código</h1>
                         <hr size="10px" width="100%" align="center" noshade>
-                
-            <h2>Exemplo2: Listando Diretórios</h2>
-
-                <p>
-                    Este script lista todos os arquivos em um diretório especificado.<br>
-                </p>
-                    <img src="images/image-shell-8.png" alt="repository list">
-                
-        </div>
-            <hr size="5px" width="100%" align="center" noshade color="red">
+                            <h2>Exemplo2: Listando Diretórios</h2>
+                                <p> 
+                                    Este script lista todos os arquivos em um diretório especificado:
+                                </p><br>
+                                        <img src="images/image-shell-8.png" alt="repository list">
+                                            
+            </div>
+                    <p class="finalP">Este é apenas um exemplo básico. Shell Script é uma linguagem poderosa para automação de tarefas e gerenciamento de sistemas Unix-like.
+                        Você pode aprender mais sobre Shell Script estudando a sintaxe, explorando exemplos e experimentando diferentes comandos e estruturas.
+                    </p>        
             
-                <footer>
-                    <img src="images/images-for-machine-terminator.png" alt="Ciber punk image for terminatot">
-                        Estes são apenas exemplos simples para começar. A programação em shell script<br>
-                        pode ser usada para realizar uma variedade de tarefas, desde automação de backups <br>
-                        até configuração de servidores. Conforme você se torna mais familiarizado com a linguagem, <br>
-                        pode criar scripts mais complexos para atender às suas necessidades específicas.
-                </footer>
+            
+            <footer>
+                <address>
+                    Atividade do curso técnico Programação para Internet<br>
+                    Professor(a): Sabrina Silva da Silveira<br>
+                    Colégio Estadual Protásio Alves<br>
+                    Aluno:Rafael Soares da Silva<br>
+                    Info1, noite<br>
+                    Av Ipiranga 1090 - Azenha - Porto Alegre - 1 CRE
+                    Fone(s): (51) 2165-0967,(51) 2165-1006<br>
+                    Email: protasioalves01cre@educar.rs.gov.br
+                </address>
+            </footer>
+        </div>
     </body>
 </html>

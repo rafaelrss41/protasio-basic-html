@@ -6,27 +6,114 @@
     <title>Exercicio6</title>
     <style>
         .container{
+            background-color: bisque;
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        .ingredientes{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .ingredientes > h1{
+            text-align: center;
+            font-size: 56px;
+            color: brown;
+        }
+
+        .ingredientes > h2 {
+            font-size: 36px;
+            padding-left: 6px;
+            color:brown;
+
+            display: flex;
+            align-items: left;
+            justify-content: space-between;
+        }
+
+        .preparo{
+
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body > img{
-            display: flex;
+
+        .preparo > h1{
+            color: brown;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        
+        .preparo > ol {
+            margin-bottom: 8px;
+        }
+
+        ol li p {
+            
+            color: #333;
+
+
+            display: inline-flex;
             align-items: center;
             justify-content: center;
+
+            margin-bottom: 15px;
         }
+
+        ol li h2{
+            color:brown;
+
+            display: flex;
+            align-items: left;
+            justify-content: space-between;
+        }
+        
         header{
+            padding: 8px;
+
+            font-weight: 700;
+            
             text-align: center;
             font-size: 56px;
             margin: 20px;
-            color: blueviolet;
+            color: brown;
         }
-        img{
+
+        body img{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
             margin: 50px;
             width:90vw;
             height: 60vh;
             text-align: right;
+            
         }
+        span{
+            padding: 15px;
+
+            font-weight: 700;
+            font-size: 46px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: brown;
+        }
+
     </style>
 </head>
     <body>
@@ -36,7 +123,7 @@
             <!-- division for "ingredientes"-->
                 <div class="ingredientes">
                         <h1>Camarão com Provolone</h1>
-                            <h2>Ingredientes:</h2>
+                            <h2>Ingredientes</h2>
                                 <ul>
                                     <li>500g de camarões limpos e descascados</li>
                                     <li>200g de queijo provolone ralado</li>
@@ -99,8 +186,8 @@
                                         </p>
                                     </li>
                                 </ol>
+                                <span>BOM APETITE !</span>
                 </div>
         </div>
-        <footer>Bom apetite!</footer>
     </body>
 </html>

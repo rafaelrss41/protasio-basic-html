@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu{
+    list-style: none;
+    padding: 0;
+    background: #232323;
+}
+#menu li{
+    display: inline;
+    margin: 100px;
+}
+
+#menu li a{
+    color: bisque;
+    padding: 25px;
+    display: inline-block;
+    
+}
+
+#menu li a:hover{
+    background: #363636;
+    
+}
+
+/* -----FORM----- */
+ .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+ }
